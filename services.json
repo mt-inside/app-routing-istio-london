@@ -1,0 +1,75 @@
+[
+    {
+        "name": "details",
+        "dns_prefixes": [
+            "details",
+            "details.default"
+        ],
+        "ports": [
+            {
+                "name": "http",
+                "service_port": 9080,
+                "protocol": "HTTP",
+                "backend_port": 9080
+            }
+        ],
+        "backends": {
+            "gke_mt-permanent-ffxxqcd8_europe-west1-b_cw-demo-europe-west1-b": "details.default.svc.cluster.local",
+            "gke_mt-permanent-ffxxqcd8_europe-west2-b_cw-demo-europe-west2-b": "details.default.svc.cluster.local"
+        }
+    },
+    {
+        "name": "ratings",
+        "dns_prefixes": [
+            "ratings",
+            "ratings.default"
+        ],
+        "ports": [
+            {
+                "name": "http",
+                "service_port": 9080,
+                "protocol": "HTTP",
+                "backend_port": 9080
+            }
+        ],
+        "backends": {
+            "gke_mt-permanent-ffxxqcd8_europe-west1-b_cw-demo-europe-west1-b": "ratings.default.svc.cluster.local"
+        }
+    },
+    {
+        "name": "productpage",
+        "dns_prefixes": [
+            "productpage",
+            "productpage.default"
+        ],
+        "ports": [
+            {
+                "name": "http",
+                "service_port": 9080,
+                "protocol": "HTTP",
+                "backend_port": 9080
+            }
+        ],
+        "backends": {
+            "gke_mt-permanent-ffxxqcd8_europe-west1-b_cw-demo-europe-west1-b": "productpage.default.svc.cluster.local"
+        }
+    },
+    {
+        "name": "reviews",
+        "dns_prefixes": [
+            "reviews",
+            "reviews.default"
+        ],
+        "ports": [
+            {
+                "name": "http",
+                "service_port": 9080,
+                "protocol": "HTTP",
+                "backend_port": 9080
+            }
+        ],
+        "backends": {
+            "gke_mt-permanent-ffxxqcd8_europe-west2-b_cw-demo-europe-west2-b": "reviews.default.svc.cluster.local"
+        }
+    }
+]
