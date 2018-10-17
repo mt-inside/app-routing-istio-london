@@ -4,7 +4,7 @@
 
 ### Prereqs
 
-* helm, at least 1.11
+* helm, at least 2.11
 * kubectl
 * jq
 * yq
