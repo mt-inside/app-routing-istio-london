@@ -5,4 +5,5 @@ set -x
 go get -u github.com/istio-ecosystem/coddiwomple
 cd $GOPATH/src/github.com/istio-ecosystem/coddiwomple
 make deps
-make
+go install ./cmd/cw
+
