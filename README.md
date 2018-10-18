@@ -8,6 +8,7 @@
 * kubectl
 * jq
 * yq
+* golang
 * tmux
 
 ### Instructions
